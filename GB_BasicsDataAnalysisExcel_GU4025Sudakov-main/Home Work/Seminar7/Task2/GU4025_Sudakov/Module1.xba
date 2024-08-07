@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE script:module PUBLIC "-//OpenOffice.org//DTD OfficeDocument 1.0//EN" "module.dtd">
+<script:module xmlns:script="http://openoffice.org/2000/script" script:name="Module1" script:language="StarBasic" script:moduleType="normal">REM  *****  BASIC  *****
+
+Function MyFunc(UserNumber1 As Integer, UserNumber2 As Integer) As Integer
+Dim Result As Integer
+Result = UserNumber1 - UserNumber2
+If Result &gt; 0 Then
+	MyFunc = result
+	Exit Function
+End If
+Result = Result * (-1)
+MyFunc = Result
+End Function 
+</script:module>
